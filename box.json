@@ -1,29 +1,18 @@
 {
     "name" : "Rollbar Appender for Logbox",
-    // ForgeBox unique slug
     "slug" : "logbox-rollbar",
-    // semantic version of your package
     "version" : "1.0.0+0",
-    // author of this package
     "author" : "Jon clausen <jon_clausen@silowebworks.com>",
-    // location of where to download the package, overrides ForgeBox location
     "location" : "https://github.com/jclausen/logbox-rollbar/archive/master.zip",
-    // project homepage URL 
     "Homepage" : "https://github.com/jclausen/logbox-rollbar",
-    // documentation URL
     "Documentation" : "https://github.com/jclausen/logbox-rollbar",
-    // ForgeBox keywords, array of strings
     "keywords" : [ "rollbar", "logbox", "logbox appenders" ],
-    // Bit that if set to true, will not allow ForgeBox posting if using commands
     "private" : false,
-    // cfml engines it supports, type and version
     "engines" : [
         { "type" : "lucee", "version" : ">=4.5.x" },
         { "type" : "adobe", "version" : ">=10.0.0" }
     ],
     
-    // contributors array of strings or structs: name,email,url 
     "Contributors" : [ "Jon Clausen <jon_clausen@silowebworks.com>"} ],
-    // array of strings of files to ignore when installing the package similar to .gitignore pattern spec 
     "ignore" : [ "box.json", "README.md" ]
 }
