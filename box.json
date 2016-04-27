@@ -13,6 +13,6 @@
         { "type" : "adobe", "version" : ">=10.0.0" }
     ],
     
-    "Contributors" : [ "Jon Clausen <jon_clausen@silowebworks.com>"} ],
+    "Contributors" : [ "Jon Clausen <jon_clausen@silowebworks.com>" ],
     "ignore" : [ "box.json", "README.md" ]
 }
