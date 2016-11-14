@@ -1,7 +1,7 @@
 {
     "name" : "Rollbar Appender for Logbox",
     "slug" : "logbox-rollbar",
-    "version" : "1.0.0+0",
+    "version" : "1.1.0+0",
     "author" : "Jon clausen <jon_clausen@silowebworks.com>",
     "location" : "https://github.com/jclausen/logbox-rollbar/archive/master.zip",
     "Homepage" : "https://github.com/jclausen/logbox-rollbar",
