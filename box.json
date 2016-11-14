@@ -12,7 +12,7 @@
         { "type" : "lucee", "version" : ">=4.5.x" },
         { "type" : "adobe", "version" : ">=10.0.0" }
     ],
-    
-    "Contributors" : [ "Jon Clausen <jon_clausen@silowebworks.com>" ],
-    "ignore" : [ "box.json", "README.md" ]
+    "type": "project",
+    "Contributors" : [ "Jon Clausen <jon_clausen@silowebworks.com>", "Ben knox <benjaminjknox@yahoo.com>" ],
+    "ignore" : [ "README.md" ]
 }
