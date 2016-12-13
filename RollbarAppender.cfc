@@ -115,6 +115,8 @@ component extends="coldbox.system.logging.AbstractAppender" accessors=true{
 	public function ExceptionToLogBody( required coldbox.system.logging.LogEvent logEvent ){
 		var exception = arguments.logEvent.getExtraInfo();
 		var objRequest = GetPageContext().GetRequest();
+		var requestBody = structKeyExists(request,"_body") ? request._body : getHttpRequestData().content;
+		
 		var logBody = {
 	        "request": {
 		      "url": objRequest.GetRequestUrl().Append( "?" & objRequest.GetQueryString() ).ToString(),
@@ -134,7 +136,7 @@ component extends="coldbox.system.logging.AbstractAppender" accessors=true{
 		      "POST": FORM,
 
 		      // body: the raw POST body
-		      "body": getHttpRequestData().content,
+		      "body": requestBody,
 
 		      "user_ip": CGI.REMOTE_ADDR
 
