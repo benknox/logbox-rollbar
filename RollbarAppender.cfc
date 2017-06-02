@@ -89,7 +89,7 @@ component extends="coldbox.system.logging.AbstractAppender" accessors=true{
 
 		// serverID?
 		if ( structKeyExists(variables, "serverID") && len( trim(variables.serverID) ) ){
-			payload.data.serverID = getServerID();
+			payload.data.server.host = getServerID();
 		}
 
 		var APIBaseURL = getAPIBaseURL();
