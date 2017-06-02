@@ -11,6 +11,7 @@ component extends="coldbox.system.logging.AbstractAppender" accessors=true{
 	property name="code_version";
 	property name="platform";
 	property name="framework";
+	property name="serverID";
 
 	public function init(
 		required string name="RollbarAppender",
@@ -84,6 +85,11 @@ component extends="coldbox.system.logging.AbstractAppender" accessors=true{
 		// framework?
 		if ( structKeyExists(variables, "framework") && len( trim(variables.framework) ) ){
 			payload.data.framework = getFramework();
+		}
+
+		// serverID?
+		if ( structKeyExists(variables, "serverID") && len( trim(variables.serverID) ) ){
+			payload.data.serverID = getServerID();
 		}
 
 		var APIBaseURL = getAPIBaseURL();
